@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newstudent</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="bootsrap" href="C:\bootstrap\css\bootstrap.css">
+    <link rel="stylesheet" href="studentss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+  <script>
+    function save(){
+        var x = document.getElementById("name").value;
+        var z = document.getElementById("name2").value;
+        var y = document.getElementById("date").value;
+        console.log("Hello  "+x+z);
+        console.log("joining date  "+y);
+        if (x == "" ||  y == "") {
+          if(x ==""){
+          document.getElementById("name").style.backgroundColor="red";
+          alert(" First Name must be filled out");
+          return false;
+          }
+          else(y =="")
+            document.getElementById("name2").style.backgroundColor="red";
+            alert("Last Name must be filled out");
+            return false;
+            }
+        }
+      
+    </script>
+<form class="form" >
+                <div class="mb-2">
+                  <label >Roll Number</label>
+                  <input type="Text" class="form-control" style="width: 100px; background-color:#F7F7F7;">
+                </div>
+                <div class="mb-3">
+                  <label id="first">First Name</label>
+                  <input type="Text" class="form-control" id="name">
+                </div>
+                <div class="mb-2">
+                    <label  >Last Name</label>
+                    <input type="Text" class="form-control" id="name2">
+                  </div>
+                  <div class="mb-3">
+                    <label >College</label>
+                    <select id="disabledSelect" class="form-select">
+                        <option>St.Thomas College,Pala</option>
+                      </select>
+                  </div>
+                  <div class="mb-3">
+                    <label>Course</label>
+                    <select id="disabledSelect" class="form-select">
+                        <option>Bsc Computer Science</option>
+                      </select>
+                  </div>
+                  <div class="mb-3">
+                  <label>Joining Date</label><br>
+                 <input type="date" class="form-control" id="date">
+
+                </div>
+               
+                <br>
+                <div>
+                <button type="submit" class="butn" onclick="save()">Save</button>
+                <button type="cancel" class="butn2">Cancel</button>
+
+                </div>
+              </form>
+               <script src="C:\bootstrap\js\bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
